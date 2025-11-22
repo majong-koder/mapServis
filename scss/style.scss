@@ -15,7 +15,11 @@
         font-size: 2rem;
     }
     
-    .team-grid, .reviews, .features {
+    .team-grid, .reviews, .features, .services-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .service-card.flex-card {
+        min-width: 100%;
     }
 }
