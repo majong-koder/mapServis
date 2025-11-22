@@ -1,0 +1,21 @@
+// Цвета
+$primary-bg: #0a0a1a;
+$secondary-bg: #1a1a2e;
+$header-bg: linear-gradient(90deg, #1a1a2e, #16213e);
+$accent-color: #4cc9f0;
+$text-color: #f0f0f0;
+
+// Шрифты
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Размеры
+$container-width: 1200px;
+$border-radius: 10px;
+$box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+// Отступы
+$section-padding: 2rem;
+$section-margin: 4rem;
+
+// Breakpoints
+$tablet: 768px;

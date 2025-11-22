@@ -1,0 +1,29 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-layout($min-width: 250px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@mixin card-style {
+    background: $secondary-bg;
+    border-radius: $border-radius;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

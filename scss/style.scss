@@ -1,0 +1,21 @@
+// Импорт всех partials
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+
+// Медиа-запросы
+@include responsive($tablet) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .team-grid, .reviews, .features {
+        grid-template-columns: 1fr;
+    }
+}
